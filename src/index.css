@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+*{
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+body{
+  width: 100%;
+  background-image: url(./Img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.main{
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background: transparent;
+}
+.top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.weather{
+  margin-top: -0.5%;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 900;
+
+}
+input{
+  width: 55%;
+  height: 40px;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: none;
+  background: transparent;
+  transition: border-color 0.2s;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: black;
+  &::placeholder{
+    color: black;
+    font-size: 18px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+  }
+
+}
+
+.search{
+  margin-left: 2%;
+  img{
+    width: 30px;
+  }
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.country{
+  margin-top: -3%;
+  width: 100%;
+}
+
+.state{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.city{
+  margin-top: -2%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.condition{
+  margin-top: -1%;
+  margin-left: 44%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.icon{
+  margin-left: -5px;
+}
+.time{
+  margin-top: -15px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+
+.humidity{
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin-left: 33%;
+  margin-top: 5%;
+}
+
+.humidity-icon{
+  margin-top: 10%;
+  margin-left: 35%;
+  display: block;
+  width: 50px;
+}
+.info{
+  margin-top: 1%;
+  margin-left: 2%;
+  width: 285px;
+  height: 285px;
+  background: transparent;
+  border-radius: 28px;
+  box-shadow: 0 0 8px 1px #3d3d3d8a;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  backdrop-filter: blur(200px);
+}
+.info:hover{
+  box-shadow: 0 0 8px 5px #000000dc;
+
+}
+.humidity-info{
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid; */
+}
+.vis-km{
+  width: 100%;
+  height: 100%;
+}
+.vis{
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  margin-left: 35%;
+  margin-top: 3%;
+}
+.eye-icon{
+  margin-top: 12%;
+  margin-left: 35%;
+  width: 40px;
+}
+.pressure-info{
+  overflow: hidden;
+  width: 100%;
+  height: 98%;
+}
+.pressure-icon{
+  margin-top: 12%;
+  margin-left: 35%;
+  width: 50px;
+}
+.pressure{
+  display: block;
+  align-items: center;
+  font-size: 28px;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+.wind-box{
+  margin-top: -15%;
+}
+.wind-icon{
+  display: block;
+  margin-top: 12%;
+  width: 50px;
+  margin-left: 20%;
+}
+.wind{
+  font-size: 28px;
+  margin-left: 15%;
+  margin-top: 25%;
+}
+.in-info{
+  margin-top: -2%;
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+.info-2{
+  margin-top: 1%;
+  margin-left: 2%;
+  width: 285px;
+  height: 285px;
+  background: transparent;
+  border-radius: 28px;
+  box-shadow: 0 0 8px 1px #3d3d3d8a;
+  position: relative;
+  backdrop-filter: blur(200px);
+  /* display: flex; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.info-2:hover{
+  box-shadow: 0 0 8px 5px #000000dc;
+}
+.sunrise-box{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.sun-icon{
+  margin-top: 10%;
+  margin-left: 25%;
+}
+.sunrise{
+  margin-left: 10%;
+  font-size: 25px;
+  display: block;
+  margin-top: 1%;
+}
+.sunset-box{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.sunset{
+  margin-left: 10%;
+  font-size: 25px;
+  display: block;
+  margin-top: 1%;
+}
+
+.moonrise-box{
+  width: 100%;
+  height: 95%;
+  display: block;
+}
+.moon-icon{
+  margin-left: 25%;
+  width: 60px;
+}
+.moonrise{
+  margin-left: 10%;
+  font-size: 25px;
+  display: block;
+  margin-top: 1%;
+}
+.moonset{
+  margin-left: 10%;
+  font-size: 25px;
+  display: block;
+  margin-top: 1%;
+}
+
+.rain-or-snow{
+  margin-top: 1%;
+  margin-left: 2%;
+  width: 185px;
+  height: 285px;
+  background: transparent;
+  border-radius: 28px;
+  box-shadow: 0 0 8px 1px #3d3d3d8a;
+  position: relative;
+  backdrop-filter: blur(200px);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+.rain-or-snow:hover{
+  box-shadow: 0 0 8px 5px #000000dc;
+}
+
+.rain-icon{
+  margin-left: 30%;
+  width: 80px;
+}
+.rain{
+  text-align: center;
+  margin-top: 1px;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.snow-icon{
+  margin-left: 30%;
+  width: 80px;
+}
+.snow{
+  text-align: center;
+  margin-top: 1px;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
